@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Breaker🧁</title>
+    <link rel="stylesheet" href="assets/stylesheet/output.css">
+    <link rel="stylesheet" href="assets/icon/remixicon.css">
+</head>
+<body>
+
+    <h1 class="game-title">
+    <span class="title-text">Donut Breaker</span>
+    <span class="emoji-spin">🍩</span>
+    </h1>
+    <div class="content-wrapper">
+         <div class="game-wrapper">
+        <div class="game">
+          <div class="start-screen">
+             <button class="play-btn"> <span><i class="ri-play-fill"></i></span> Play</button>
+          </div>
+          <div class="bricks"></div>
+          <img src="assets/img/newbasket2.png" alt="Basket" class="ball">
+          <div class="paddle"></div>
+        </div>
+   </div>
+
+    <div class="win-popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">🎉 You Win!</h2>
+            <p class="popup-text">You ate all the sweets! 🧁</p>
+            <button class="try">Play Again</button>
+        </div>
+    </div>
+
+
+    <div class="lose-popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">😢 You Lose!</h2>
+            <p class="popup-text">Missed it! 🧁</p>
+            <button class="try">Play Again</button>
+        </div>
+    </div>
+
+<!-- footer////////////// -->
+   <footer class="footer">
+  <!-- بک‌گراند پشت عکس -->
+  <div class="relative flex items-center justify-center">
+    <!-- لایه پشتی (بزرگ‌تر) -->
+    <div class="blob-bg absolute w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64" style="background: linear-gradient(135deg, #5C3A28, #6d442e); opacity: 0.35;">
+    </div>
+    <!-- عکس اصلی (کوچک‌تر) -->
+    <figure class="blob-img relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 overflow-hidden z-10 bg-[#5C3A28]" >
+      <img src="assets/img/behidonuts.jpg" alt="" class="w-full h-full object-cover">
+    </figure>
+  </div>
+
+  <!-- اسم و تایتل -->
+  <div class="text-center">
+    <p class="text-[#5C3A28] text-2xl md:text-3xl font-bold tracking-wide">Behrokh Naderi</p>
+    <p class="text-[#8a6b5b] text-base md:text-lg tracking-[2px] uppercase">Frontend Developer</p>
+  </div>
+  <div class="w-50 h-px rounded-full bg-[#F27C97] opacity-70"></div>
+  <!-- آیکون‌های سوشال -->
+  <div class="flex gap-4">
+    <a href="https://www.instagram.com/behrokh_dev" target="_blank"
+       class="icon">
+      <i class="ri-instagram-line"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/behrokh-naderi/" target="_blank"
+       class="icon">
+      <i class="ri-linkedin-box-fill"></i>
+    </a>
+    <a href="https://github.com/behrokh-dev" target="_blank"
+       class="icon">
+      <i class="ri-github-fill"></i>
+    </a>
+    <a href="mailto:naderibehrokh@gmail.com"
+       class="icon">
+      <i class="ri-google-fill"></i>
+    </a>
+  </div>
+
+  <p class="text-[#8a6b5b] text-xs tracking-[2px] uppercase">© 2026 Behrokh-dev</p>
+
+</footer>
+<!-- footer///////////// -->
+    </div>
+    <script src="assets/javascript/master.js"></script>
+
+</body>
+</html>

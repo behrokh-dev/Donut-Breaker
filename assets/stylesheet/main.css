@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+
+@layer base{
+    body{
+        @apply flex flex-col gap-6 items-center justify-center min-h-screen m-0 font-sans bg-[linear-gradient(135deg,#fff7f8_0%,#fde8ee_30%,#f7ddd7_60%,#eac8ba_100%)];
+    }
+}
+@layer components{
+
+    .content-wrapper{
+    @apply w-full max-w-[800px] px-4 mx-auto;
+}
+
+    .game-title{
+    @apply text-4xl md:text-5xl font-extrabold mb-8 tracking-wide pt-15; 
+    }
+
+    .game-title .title-text{
+    @apply bg-[linear-gradient(135deg,#F27C97_0%,#E0668A_50%,#5C3A28_100%)] bg-clip-text text-transparent [text-shadow:0_4px_20px_rgba(242,124,151,0.35)];
+    }
+
+   .game-title .emoji-spin{
+    @apply inline-block ;
+
+   }
+
+    .game-wrapper{
+    @apply relative w-full max-w-[800px] mx-auto mb-20;
+    aspect-ratio: 800 / 500;
+    }
+
+   .game{
+    @apply absolute top-0 left-0 w-[800px] h-[500px] rounded-2xl overflow-hidden  shadow-[0_0_45px_rgba(242,124,151,.45),0_35px_90px_rgba(92,58,40,.30)];
+    transform-origin: top left;
+    }
+
+    .start-screen{
+        @apply absolute inset-0 bg-[rgba(255,255,255,0.33)] backdrop-blur-[3px] z-999 flex items-center justify-center
+    }
+
+    .play-btn{
+        @apply py-[18px] px-[25px] text-[20px] rounded-[50px] cursor-pointer bg-[linear-gradient(135deg,#F7A8C2,#F27C97)] text-[#5C3A28] font-bold duration-300 hover:scale-110 shadow-[0-10px-30px-rgba(242,124,151,.35)]
+    }
+
+    .bricks{
+        @apply absolute inset-0;
+    }
+
+    .brick{
+        @apply absolute w-[80px] h-[60px] object-contain select-none pointer-events-none;
+    }
+
+    .ball{
+        @apply absolute w-[160px] h-[160px] object-contain select-none pointer-events-none;
+    }
+
+    .paddle{
+        @apply absolute bottom-[10px] left-0 w-[200px] h-[20px] rounded-xl bg-[#5C3A28];
+    }
+
+    .win-popup{
+        @apply fixed inset-0 bg-black/40 flex items-center justify-center z-50 transition-opacity duration-300;
+    }
+
+    .lose-popup{
+        @apply fixed inset-0 bg-black/40 flex items-center justify-center z-50 transition-opacity duration-300;
+    }
+
+    .popup-content{
+        @apply bg-white/70 backdrop-blur-lg px-16 py-10 rounded-2xl text-center shadow-2xl;
+    }
+
+    .popup-title{
+        @apply text-[#5C3A28] text-3xl font-bold mb-3;
+    }
+
+    .popup-text{
+        @apply text-[#5C3A28] text-lg;
+    }
+
+    .try{
+        @apply mt-6 px-6 py-2 rounded-xl bg-[#F27C97] text-white hover:bg-[#e0668a] hover:scale-105 transition-all cursor-pointer;
+    }
+
+    .footer{
+    @apply min-h-[40vh] mx-auto py-10 flex flex-col items-center gap-4 md:gap-6 bg-[#fff6f4c2] border border-[#E8C5B7] rounded-[30px] backdrop-blur-lg w-[80%] max-w-175 shadow-[0_0_35px_rgba(242,124,151,.18),0_30px_80px_rgba(92,58,40,.28)]
+    }
+
+  .icon{
+    @apply   w-12 h-12  md:w-15  md:h-15  rounded-full border border-[#5C3A28] flex items-center justify-center text-[#5C3A28] text-2xl  md:text-3xl no-underline transition-all duration-200 hover:border-[#F27C97] hover:text-[#F27C97]   shadow-[0_0_25px_rgba(242,124,151,.45)]
+  }
+
+}
+
+
+
+@keyframes blobBg {
+  0%   { border-radius: 60% 40% 55% 45% / 70% 30% 70% 30%; }
+  33%  { border-radius: 40% 60% 45% 55% / 30% 70% 30% 70%; }
+  66%  { border-radius: 55% 45% 60% 40% / 50% 50% 40% 60%; }
+  100% { border-radius: 60% 40% 55% 45% / 70% 30% 70% 30%; }
+}
+
+@keyframes blobImg {
+  0%   { border-radius: 56% 44% 55% 45% / 79% 14% 86% 21%; }
+  33%  { border-radius: 44% 56% 45% 55% / 21% 86% 14% 79%; }
+  66%  { border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%; }
+  100% { border-radius: 56% 44% 55% 45% / 79% 14% 86% 21%; }
+}
+
+.blob-bg {
+  animation: blobBg 6s ease-in-out infinite;
+}
+
+.blob-img {
+  animation: blobImg 6s ease-in-out infinite;
+}
+
+
+
+/* npx @tailwindcss/cli -i ./src/assets/stylesheet/main.css -o ./src/assets/stylesheet/output.css --watch */
