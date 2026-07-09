@@ -11,6 +11,7 @@ https://behrokh-dev.github.io/Donut-Breaker/
 
 ## preview
 <img width="1897" height="810" alt="Image" src="https://github.com/user-attachments/assets/68948ce4-2684-4949-86c6-b30110eae83e" />
+<img width="1600" height="789" alt="Image" src="https://github.com/user-attachments/assets/3fc612dd-38d9-45ad-b4c6-04dfb2ca2467" />
 
 ---
 ## ✨ Features
