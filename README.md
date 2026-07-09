@@ -1,1 +1,81 @@
-# Donut-Breaker
+# 🍩 Donut Breaker
+
+A fun and responsive **Brick Breaker**-style game with a sweet donut theme! Smash all the donuts, keep the ball alive, and challenge yourself to clear every level.
+
+## 🎮 Live Demo
+
+🔗 **Play the game here:**  
+https://behrokh-dev.github.io/Donut-Breaker/
+
+---
+
+## preview
+
+
+---
+## ✨ Features
+
+- 🍩 Donut-themed Brick Breaker gameplay
+- 📱 Fully responsive on desktop, tablet, and mobile devices
+- 🎨 Modern and colorful UI built with Tailwind CSS
+- ⚡ Interactive gameplay using JavaScript DOM manipulation
+- 🎯 Accurate ball, paddle, and brick collision detection
+- 🏆 Score tracking
+- 💖 Clean and user-friendly interface
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- Tailwind CSS
+- JavaScript (DOM Manipulation)
+
+---
+
+## 📂 Project Structure
+
+```text
+Donut-Breaker/
+│
+├── assets/
+├── css/
+├── js/
+├── index.html
+└── README.md
+```
+
+---
+
+## 🎮 How to Play
+
+- Move the paddle to bounce the ball.
+- Break all the donut blocks.
+- Prevent the ball from falling.
+- Clear the board to win the game.
+- Try to achieve the highest score!
+
+---
+
+## 📱 Responsive Design
+
+This game is fully optimized for:
+
+- 💻 Desktop
+- 💼 Laptop
+- 📱 Mobile
+- 📟 Tablet
+
+---
+
+## 👩‍💻 Author
+
+**Behrokh Naderi**
+
+---
+
+## ⭐ Support
+
+If you like this project, don't forget to give it a ⭐ on GitHub!
+
+Your support is greatly appreciated. 😊
