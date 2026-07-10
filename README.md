@@ -22,8 +22,6 @@ https://behrokh-dev.github.io/Donut-Breaker/
 - 📱 Fully responsive on desktop, tablet, and mobile devices
 - 🎨 Modern and colorful UI built with Tailwind CSS
 - ⚡ Interactive gameplay using JavaScript DOM manipulation
-- 🎯 Accurate ball, paddle, and brick collision detection
-- 🏆 Score tracking
 - 💖 Clean and user-friendly interface
 
 ---
@@ -52,9 +50,9 @@ Donut-Breaker/
 
 ## 🎮 How to Play
 
-- Move the paddle to bounce the ball.
+- Move the paddle to bounce the basket.
 - Break all the donut blocks.
-- Prevent the ball from falling.
+- Prevent the basket from falling.
 - Clear the board to win the game.
 - Try to achieve the highest score!
 
